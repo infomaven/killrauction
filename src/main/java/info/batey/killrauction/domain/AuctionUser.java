@@ -42,4 +42,21 @@ public class AuctionUser {
     public Set<String> getEmails() {
         return emails;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + userName + '\'' +
+                "fname='" + firstName + '\'' +
+                "lname='" + lastName + '\'' +
+                "emails='" + emails + '\'' +
+                "password='" + md5Password + '\'' +
+                "salt='" + salt +
+                "}";
+    }
+
+
+
+
+
 }
